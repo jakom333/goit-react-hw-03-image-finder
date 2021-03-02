@@ -19,9 +19,6 @@ export default class App extends Component {
     error: null
   }
 
-  componentDidMount() {
-
-  }
 
   componentDidUpdate(prevProps, prevState) {
     if (prevState.search !== this.state.search) {
