@@ -6,7 +6,7 @@ const ImageGalleryItem = ({ webformatURL,
     largeImageURL,
     tags = '',
     onSetImgInfo,
-    openModal, }) => {
+}) => {
 
     return (
         <li className={styles.ImageGalleryItem}>

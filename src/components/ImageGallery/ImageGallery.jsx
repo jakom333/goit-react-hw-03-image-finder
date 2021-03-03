@@ -3,7 +3,7 @@ import ImageGalleryItem from './ImageGalleryItem'
 import PropTypes from 'prop-types';
 import styles from './ImageGallery.module.css'
 
-const ImageGallery = ({ images, onSetImgInfo, openModal }) => {
+const ImageGallery = ({ images, onSetImgInfo }) => {
     return (
         <ul className={styles.ImageGallery}>
             {images.map(({ webformatURL, largeImageURL, tags, id }) => (
@@ -13,7 +13,7 @@ const ImageGallery = ({ images, onSetImgInfo, openModal }) => {
                     largeImageURL={largeImageURL}
                     tags={tags}
                     onSetImgInfo={onSetImgInfo}
-                    openModal={openModal} />
+                />
             ))}
         </ul>
     )

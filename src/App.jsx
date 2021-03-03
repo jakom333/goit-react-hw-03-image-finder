@@ -86,7 +86,6 @@ export default class App extends Component {
         {isLoading && <Loader type="ThreeDots" color="#006eff" height={100} width={100} />}
         <ImageGallery
           images={images}
-          openModal={this.toggleModal}
           onSetImgInfo={this.setImgInfo}
         />
         {images.length > 0 && !isLoading && (
