@@ -7,13 +7,10 @@ const ImageGalleryItem = ({ webformatURL,
     tags = '',
     onSetImgInfo,
     openModal, }) => {
-    console.log(webformatURL)
+
     return (
         <li className={styles.ImageGalleryItem}>
-            <img src={webformatURL} alt={tags} className={styles.ImageGalleryItemImage} onClick={() => {
-                onSetImgInfo({ largeImageURL, tags });
-                openModal();
-            }} />
+            <img src={webformatURL} alt={tags} className={styles.ImageGalleryItemImage} data-largeimageurl={largeImageURL} data-tags={tags} onClick={onSetImgInfo} />
         </li>
     )
 }

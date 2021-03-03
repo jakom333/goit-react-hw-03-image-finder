@@ -65,8 +65,10 @@ export default class App extends Component {
     }))
   }
 
-  setImgInfo = ({ largeImageURL, tags }) => {
-    this.setState({ largeImageURL, tags })
+  setImgInfo = ({ target }) => {
+    const { largeimageurl, tags } = target.dataset;
+    this.setState({ largeImageURL: largeimageurl, imgTags: tags });
+    this.toggleModal();
   }
 
   render() {
